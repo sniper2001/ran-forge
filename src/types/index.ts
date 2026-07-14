@@ -1,18 +1,16 @@
-// Episode 3 Configuration
+// RAN Online Episode 3 Configuration
 export const EPISODE_3_CONFIG = {
   MAX_LEVEL: 157,
   EPISODE: 3,
   STAT_POINTS_PER_LEVEL: 3,
 } as const;
 
-// Character Stats
+// RAN Online Stats: STR, DEX, INT, VIT
 export interface CharacterStats {
-  STR: number;  // Strength
-  DEX: number;  // Dexterity
-  INT: number;  // Intelligence
-  CON: number;  // Constitution
-  WIS: number;  // Wisdom
-  CHA: number;  // Charisma
+  STR: number;  // Strength - Physical Attack
+  DEX: number;  // Dexterity - Accuracy, Evasion, Ranged Damage
+  INT: number;  // Intelligence - Magic Attack, MP
+  VIT: number;  // Vitality - HP, Defense
 }
 
 // Skill Definition
@@ -23,12 +21,13 @@ export interface Skill {
   requirements: SkillRequirement[];
   class: string[];
   level: number;
-  episode?: number; // Episode when skill was introduced
+  episode?: number;
+  type?: string;
 }
 
 // Skill Requirement
 export interface SkillRequirement {
-  type: 'stat' | 'skill' | 'level';
+  type: string;
   stat?: keyof CharacterStats;
   value: number;
   skill?: string;

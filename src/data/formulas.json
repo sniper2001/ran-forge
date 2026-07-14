@@ -1,0 +1,30 @@
+{
+  "damage": {
+    "physical": "base_attack + (STR * 1.2) + (DEX * 0.2) - enemy_defense",
+    "ranged": "base_attack + (DEX * 1.3) + (STR * 0.2) - enemy_defense",
+    "magic": "base_spell_power + (INT * 1.5) + (DEX * 0.2) - magic_resistance",
+    "critical": "base_damage * (1 + (DEX * 0.05)) * critical_multiplier"
+  },
+  "stats_priority": {
+    "swordsman": {
+      "primary": "STR",
+      "secondary": "VIT",
+      "ratio": "STR:VIT = 60:40"
+    },
+    "archer": {
+      "primary": "DEX",
+      "secondary": "INT",
+      "ratio": "DEX:INT:VIT = 60:25:15"
+    },
+    "shaman": {
+      "primary": "INT",
+      "secondary": "DEX",
+      "ratio": "INT:DEX:VIT = 60:20:20"
+    },
+    "brawler": {
+      "primary": "STR",
+      "secondary": "DEX",
+      "ratio": "STR:DEX:VIT = 50:35:15"
+    }
+  }
+}

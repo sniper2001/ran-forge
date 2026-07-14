@@ -6,19 +6,17 @@ import classes from '@/data/classes.json';
 import skills from '@/data/skills.json';
 
 function App() {
-  const [selectedClass, setSelectedClass] = useState('warrior');
+  const [selectedClass, setSelectedClass] = useState('swordsman');
   const [character, setCharacter] = useState<Character>({
     id: '1',
     name: 'New Adventurer',
-    class: 'warrior',
+    class: 'swordsman',
     level: 1,
     stats: {
-      STR: 10,
-      DEX: 6,
+      STR: 14,
+      DEX: 8,
       INT: 3,
-      CON: 9,
-      WIS: 5,
-      CHA: 4,
+      VIT: 12,
     },
     skills: [],
     availableStatPoints: 0,
@@ -28,7 +26,6 @@ function App() {
     <div className="min-h-screen bg-ran-primary">
       <Header />
       <main className="container py-8">
-        {/* Episode Info Bar */}
         <div className="bg-gradient-to-r from-ran-accent to-red-600 p-4 rounded-lg mb-6 text-white font-semibold">
           <span>⚔️ Episode {EPISODE_3_CONFIG.EPISODE}</span> • 
           <span className="ml-2">Max Level: {EPISODE_3_CONFIG.MAX_LEVEL}</span> • 
@@ -36,7 +33,6 @@ function App() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {/* Class Selection */}
           <div className="md:col-span-1">
             <div className="stat-card">
               <h2 className="text-xl font-bold mb-4">Select Class</h2>
@@ -62,7 +58,6 @@ function App() {
             </div>
           </div>
 
-          {/* Calculator */}
           <div className="md:col-span-2">
             <Calculator character={character} setCharacter={setCharacter} skills={skills.skills} />
           </div>

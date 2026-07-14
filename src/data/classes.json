@@ -1,0 +1,60 @@
+{
+  "classes": [
+    {
+      "id": "swordsman",
+      "name": "Swordsman",
+      "description": "Melee warrior with sword mastery and heavy armor",
+      "icon": "⚔️",
+      "baseStats": {
+        "STR": 14,
+        "DEX": 8,
+        "INT": 3,
+        "VIT": 12
+      },
+      "specialties": ["Sword Mastery", "Heavy Armor", "Physical Attack", "Tanking"],
+      "available": true
+    },
+    {
+      "id": "archer",
+      "name": "Archer",
+      "description": "Ranged attacker with bow mastery and high accuracy",
+      "icon": "🏹",
+      "baseStats": {
+        "STR": 9,
+        "DEX": 14,
+        "INT": 5,
+        "VIT": 7
+      },
+      "specialties": ["Bow Mastery", "Accuracy", "Critical Strikes", "Ranged Combat"],
+      "available": true
+    },
+    {
+      "id": "shaman",
+      "name": "Shaman",
+      "description": "Magical spellcaster with elemental magic and support abilities",
+      "icon": "🔮",
+      "baseStats": {
+        "STR": 4,
+        "DEX": 6,
+        "INT": 14,
+        "VIT": 7
+      },
+      "specialties": ["Elemental Magic", "Healing", "Support Buffs", "Area Spells"],
+      "available": true
+    },
+    {
+      "id": "brawler",
+      "name": "Brawler",
+      "description": "Hand-to-hand martial artist with powerful combat techniques",
+      "icon": "👊",
+      "baseStats": {
+        "STR": 12,
+        "DEX": 11,
+        "INT": 3,
+        "VIT": 13
+      },
+      "specialties": ["Martial Arts", "Unarmed Combat", "Grappling", "Evasion"],
+      "available": true
+    }
+  ]
+}
