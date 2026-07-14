@@ -1,0 +1,498 @@
+{
+  "skills": [
+    {
+      "id": "slash",
+      "name": "Slash",
+      "description": "Basic sword attack dealing physical damage",
+      "class": ["swordsman"],
+      "level": 1,
+      "episode": 1,
+      "type": "offensive",
+      "requirements": [
+        {
+          "type": "stat",
+          "stat": "STR",
+          "value": 5
+        }
+      ]
+    },
+    {
+      "id": "power_slash",
+      "name": "Power Slash",
+      "description": "Powerful sword strike with increased damage",
+      "class": ["swordsman"],
+      "level": 10,
+      "episode": 1,
+      "type": "offensive",
+      "requirements": [
+        {
+          "type": "stat",
+          "stat": "STR",
+          "value": 12
+        },
+        {
+          "type": "level",
+          "value": 10
+        }
+      ]
+    },
+    {
+      "id": "sword_tornado",
+      "name": "Sword Tornado",
+      "description": "Spinning slash attack hitting multiple enemies",
+      "class": ["swordsman"],
+      "level": 30,
+      "episode": 2,
+      "type": "offensive",
+      "requirements": [
+        {
+          "type": "stat",
+          "stat": "STR",
+          "value": 28
+        },
+        {
+          "type": "stat",
+          "stat": "VIT",
+          "value": 18
+        },
+        {
+          "type": "level",
+          "value": 30
+        }
+      ]
+    },
+    {
+      "id": "sword_rain",
+      "name": "Sword Rain",
+      "description": "Unleash a barrage of sword strikes on area",
+      "class": ["swordsman"],
+      "level": 60,
+      "episode": 3,
+      "type": "offensive",
+      "requirements": [
+        {
+          "type": "stat",
+          "stat": "STR",
+          "value": 50
+        },
+        {
+          "type": "level",
+          "value": 60
+        }
+      ]
+    },
+    {
+      "id": "parry",
+      "name": "Parry",
+      "description": "Block and reduce incoming damage",
+      "class": ["swordsman"],
+      "level": 15,
+      "episode": 1,
+      "type": "defensive",
+      "requirements": [
+        {
+          "type": "stat",
+          "stat": "VIT",
+          "value": 12
+        },
+        {
+          "type": "level",
+          "value": 15
+        }
+      ]
+    },
+    {
+      "id": "arrow_shot",
+      "name": "Arrow Shot",
+      "description": "Basic arrow attack with standard damage",
+      "class": ["archer"],
+      "level": 1,
+      "episode": 1,
+      "type": "offensive",
+      "requirements": [
+        {
+          "type": "stat",
+          "stat": "DEX",
+          "value": 5
+        }
+      ]
+    },
+    {
+      "id": "charged_shot",
+      "name": "Charged Shot",
+      "description": "Charge up bow for increased damage",
+      "class": ["archer"],
+      "level": 12,
+      "episode": 1,
+      "type": "offensive",
+      "requirements": [
+        {
+          "type": "stat",
+          "stat": "DEX",
+          "value": 14
+        },
+        {
+          "type": "level",
+          "value": 12
+        }
+      ]
+    },
+    {
+      "id": "multi_shot",
+      "name": "Multi Shot",
+      "description": "Fire multiple arrows in quick succession",
+      "class": ["archer"],
+      "level": 35,
+      "episode": 2,
+      "type": "offensive",
+      "requirements": [
+        {
+          "type": "stat",
+          "stat": "DEX",
+          "value": 26
+        },
+        {
+          "type": "level",
+          "value": 35
+        }
+      ]
+    },
+    {
+      "id": "arrow_rain",
+      "name": "Arrow Rain",
+      "description": "Barrage of arrows covering wide area",
+      "class": ["archer"],
+      "level": 65,
+      "episode": 3,
+      "type": "offensive",
+      "requirements": [
+        {
+          "type": "stat",
+          "stat": "DEX",
+          "value": 45
+        },
+        {
+          "type": "level",
+          "value": 65
+        }
+      ]
+    },
+    {
+      "id": "tracking_shot",
+      "name": "Tracking Shot",
+      "description": "Arrow that tracks moving targets",
+      "class": ["archer"],
+      "level": 25,
+      "episode": 1,
+      "type": "offensive",
+      "requirements": [
+        {
+          "type": "stat",
+          "stat": "DEX",
+          "value": 20
+        },
+        {
+          "type": "stat",
+          "stat": "INT",
+          "value": 8
+        },
+        {
+          "type": "level",
+          "value": 25
+        }
+      ]
+    },
+    {
+      "id": "fireball",
+      "name": "Fireball",
+      "description": "Hurl explosive fireball at enemy",
+      "class": ["shaman"],
+      "level": 5,
+      "episode": 1,
+      "type": "offensive",
+      "requirements": [
+        {
+          "type": "stat",
+          "stat": "INT",
+          "value": 10
+        },
+        {
+          "type": "level",
+          "value": 5
+        }
+      ]
+    },
+    {
+      "id": "ice_bolt",
+      "name": "Ice Bolt",
+      "description": "Freeze enemies with ice magic, reduces movement",
+      "class": ["shaman"],
+      "level": 8,
+      "episode": 1,
+      "type": "offensive",
+      "requirements": [
+        {
+          "type": "stat",
+          "stat": "INT",
+          "value": 12
+        },
+        {
+          "type": "level",
+          "value": 8
+        }
+      ]
+    },
+    {
+      "id": "lightning",
+      "name": "Lightning",
+      "description": "Call down powerful lightning bolts",
+      "class": ["shaman"],
+      "level": 20,
+      "episode": 1,
+      "type": "offensive",
+      "requirements": [
+        {
+          "type": "stat",
+          "stat": "INT",
+          "value": 20
+        },
+        {
+          "type": "level",
+          "value": 20
+        }
+      ]
+    },
+    {
+      "id": "heal",
+      "name": "Heal",
+      "description": "Restore health to target ally",
+      "class": ["shaman"],
+      "level": 3,
+      "episode": 1,
+      "type": "support",
+      "requirements": [
+        {
+          "type": "stat",
+          "stat": "INT",
+          "value": 8
+        }
+      ]
+    },
+    {
+      "id": "greater_heal",
+      "name": "Greater Heal",
+      "description": "Restore large amounts of health",
+      "class": ["shaman"],
+      "level": 28,
+      "episode": 2,
+      "type": "support",
+      "requirements": [
+        {
+          "type": "stat",
+          "stat": "INT",
+          "value": 24
+        },
+        {
+          "type": "level",
+          "value": 28
+        }
+      ]
+    },
+    {
+      "id": "mass_heal",
+      "name": "Mass Heal",
+      "description": "Heal all nearby allies at once",
+      "class": ["shaman"],
+      "level": 55,
+      "episode": 3,
+      "type": "support",
+      "requirements": [
+        {
+          "type": "stat",
+          "stat": "INT",
+          "value": 38
+        },
+        {
+          "type": "level",
+          "value": 55
+        }
+      ]
+    },
+    {
+      "id": "blessing",
+      "name": "Blessing",
+      "description": "Grant allies buff for increased attack",
+      "class": ["shaman"],
+      "level": 18,
+      "episode": 1,
+      "type": "buff",
+      "requirements": [
+        {
+          "type": "stat",
+          "stat": "INT",
+          "value": 16
+        },
+        {
+          "type": "level",
+          "value": 18
+        }
+      ]
+    },
+    {
+      "id": "inferno",
+      "name": "Inferno",
+      "description": "Massive fire spell engulfing area in flames",
+      "class": ["shaman"],
+      "level": 70,
+      "episode": 3,
+      "type": "offensive",
+      "requirements": [
+        {
+          "type": "stat",
+          "stat": "INT",
+          "value": 50
+        },
+        {
+          "type": "level",
+          "value": 70
+        }
+      ]
+    },
+    {
+      "id": "punch",
+      "name": "Punch",
+      "description": "Basic martial arts punch",
+      "class": ["brawler"],
+      "level": 1,
+      "episode": 1,
+      "type": "offensive",
+      "requirements": [
+        {
+          "type": "stat",
+          "stat": "STR",
+          "value": 5
+        }
+      ]
+    },
+    {
+      "id": "heavy_blow",
+      "name": "Heavy Blow",
+      "description": "Powerful punch with knockback effect",
+      "class": ["brawler"],
+      "level": 10,
+      "episode": 1,
+      "type": "offensive",
+      "requirements": [
+        {
+          "type": "stat",
+          "stat": "STR",
+          "value": 12
+        },
+        {
+          "type": "level",
+          "value": 10
+        }
+      ]
+    },
+    {
+      "id": "roundhouse_kick",
+      "name": "Roundhouse Kick",
+      "description": "Spinning kick hitting multiple enemies",
+      "class": ["brawler"],
+      "level": 24,
+      "episode": 2,
+      "type": "offensive",
+      "requirements": [
+        {
+          "type": "stat",
+          "stat": "STR",
+          "value": 20
+        },
+        {
+          "type": "stat",
+          "stat": "DEX",
+          "value": 14
+        },
+        {
+          "type": "level",
+          "value": 24
+        }
+      ]
+    },
+    {
+      "id": "chi_punch",
+      "name": "Chi Punch",
+      "description": "Infuse punch with chi energy for powerful attack",
+      "class": ["brawler"],
+      "level": 40,
+      "episode": 2,
+      "type": "offensive",
+      "requirements": [
+        {
+          "type": "stat",
+          "stat": "STR",
+          "value": 32
+        },
+        {
+          "type": "stat",
+          "stat": "INT",
+          "value": 8
+        },
+        {
+          "type": "level",
+          "value": 40
+        }
+      ]
+    },
+    {
+      "id": "tiger_strike",
+      "name": "Tiger Strike",
+      "description": "Devastating combo of rapid strikes",
+      "class": ["brawler"],
+      "level": 58,
+      "episode": 3,
+      "type": "offensive",
+      "requirements": [
+        {
+          "type": "stat",
+          "stat": "STR",
+          "value": 44
+        },
+        {
+          "type": "stat",
+          "stat": "DEX",
+          "value": 32
+        },
+        {
+          "type": "level",
+          "value": 58
+        }
+      ]
+    },
+    {
+      "id": "counter",
+      "name": "Counter",
+      "description": "Block incoming attack and counter with strike",
+      "class": ["brawler"],
+      "level": 16,
+      "episode": 1,
+      "type": "defensive",
+      "requirements": [
+        {
+          "type": "stat",
+          "stat": "DEX",
+          "value": 12
+        },
+        {
+          "type": "stat",
+          "stat": "VIT",
+          "value": 12
+        },
+        {
+          "type": "level",
+          "value": 16
+        }
+      ]
+    }
+  ]
+}
